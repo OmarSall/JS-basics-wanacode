@@ -1,12 +1,13 @@
+/*
 Exercise:
 
 come up with a variable name for the name of the person who is currently visiting the website
 
 -> visitor, user
+*/
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-1. Create two variables called width and height. Each of those variables should hold some number. Then, create a new variable that holds the area of a rectangle, calculated based on the width and height variables. Print it to the console.
+// 1. Create two variables called width and height. Each of those variables should hold some number. Then, create a new variable that holds the area of a rectangle, calculated based on the width and height variables. Print it to the console.
 
 console.clear();
 
@@ -17,9 +18,9 @@ let area = width * height;
 
 console.log("The area of the rectangle is: " + area);
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-2. Create two variables called firstNumber and secondNumber. Assign each of them with a different number. Write a program that swaps both values.
+// 2. Create two variables called firstNumber and secondNumber. Assign each of them with a different number. Write a program that swaps both values.
 
 console.clear();
 
@@ -36,7 +37,7 @@ secondNumber = temp;
 console.log("After Swap:");
 console.log("firstNumber = ", firstNumber, "secondNumber = ", secondNumber);
 
--------------------------XOR approach---------------------------------------
+// -------------------------XOR approach---------------------------------------
 console.clear();
 
 let firstNumber = 5;
@@ -52,9 +53,9 @@ firstNumber = firstNumber ^ secondNumber;
 console.log("After Swap:");
 console.log("firstNumber =", firstNumber, "secondNumber =", secondNumber);
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-3. Create variables that hold grades from three different classes:
+/* 3. Create variables that hold grades from three different classes:
 
 Physics
 
@@ -63,7 +64,7 @@ Math
 English
 
 Calculate the average of the grades. If the average equals 4 out of 5 or higher, print "Good job!". Otherwise, print "Try harder!"
-
+*/
 console.clear();
 
 function average(grades) {
@@ -89,9 +90,9 @@ if (avg >= 4) {
     console.log("Try harder!");
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-4. Fix the code:
+// 4. Fix the code:
 
 const currentAge = 30;
 const retirenmentAgeInPoland = 67;
@@ -100,23 +101,24 @@ const yearsLeftToRetirenment = retirenmentAgeInPoland;
 yearsLeftToRetirenment = retirenmentAgeInPoland - currentAge;
 
 console.log(yearsLeftToRetirenment);
-the expected result of the above code:
 
-37 
+//the expected result of the above code: 37 
 
----------
+// ---------
+
 const currentAge = 30;
 const retirenmentAgeInPoland = 67;
 const yearsLeftToRetirenment = retirenmentAgeInPoland - currentAge;
 
+
 console.log(yearsLeftToRetirenment);
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-5. Fix the code (3 mistakes):
+// 5. Fix the code (3 mistakes):
 
 const isPayingVAT = true;
-const VATRateInPoland = 0.23;
+let VATRateInPoland = 0.23;
 const incomeTaxRate = 0.12;
 let monthlyIncome = 3500;
 const taxToPay = 0;
@@ -129,12 +131,10 @@ taxToPay = taxToPay + monthlyIncome * incomeTaxRate;
 
 console.log('tax to pay: ' + taxToPay);
 
--------
+//-------
 
-the expected result of the above code:
-
-tax to pay: 1225 
-----------------------------
+//the expected result of the above code: tax to pay: 1225 
+// ----------------------------
 
 console.clear();
 
@@ -152,9 +152,9 @@ taxToPay += monthlyIncome * incomeTaxRate;  //third mistake (not critical one)
 
 console.log('tax to pay: ' + taxToPay);
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-6. Declare a variable called isSunny and assign a boolean value to it. Create an if-else statement that checks if it's sunny. If it is, print "Don't forget your sunglasses!". If it's not, print "You might need an umbrella."
+// 6. Declare a variable called isSunny and assign a boolean value to it. Create an if-else statement that checks if it's sunny. If it is, print "Don't forget your sunglasses!". If it's not, print "You might need an umbrella."
 
 console.clear();
 
@@ -166,9 +166,9 @@ if (isSunny) {
     console.log("You might need an umbrella.");
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-7. Create a variable named currentMonth and assign a number representing the current month. Use an if statement to check the month and print a message based on the season (e.g., "It's winter" for December, January, and February).
+// 7. Create a variable named currentMonth and assign a number representing the current month. Use an if statement to check the month and print a message based on the season (e.g., "It's winter" for December, January, and February).
 
 console.clear();
 let currentMonth = 3; 
@@ -185,9 +185,9 @@ if (currentMonth === 12 || currentMonth === 1 || currentMonth === 2) {
     console.log("Invalid month.");
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-8. Create two variables personWeight and personHeight  and assign some numbers there. Calculate the BMI (and store it in well-named variable) using the formula BMI = weight / (height * height) . Print the calculated BMI.
+// 8. Create two variables personWeight and personHeight  and assign some numbers there. Calculate the BMI (and store it in well-named variable) using the formula BMI = weight / (height * height) . Print the calculated BMI.
 
 console.clear();
 let personWeight = 70; //Weight in kilograms
@@ -198,13 +198,13 @@ let bodyMassIndex = personWeight / (Math.pow(personHeight, 2));
 
 console.log("Calculated BMI:", bodyMassIndex.toFixed(2)); 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-9. Write a program that checks if a person is eligible to vote. Declare a variable called age and assign it a numeric value. Use an if-else statement to determine if the person can vote (age >= 18) and print (using console.log() ) the result:
+// 9. Write a program that checks if a person is eligible to vote. Declare a variable called age and assign it a numeric value. Use an if-else statement to determine if the person can vote (age >= 18) and print (using console.log() ) the result:
 
-a citizen can vote  if the age is at least 18
+// a citizen can vote  if the age is at least 18
 
-a citizen can't vote if the age is less than 18
+// a citizen can't vote if the age is less than 18
 
 console.clear();
 let age = 17;
@@ -215,9 +215,9 @@ if (age >= 18) {
     console.log("A citizen can't vote.");
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-10. Write a code that simulates a traffic light. Declare a variable called currentColor with values "red", "yellow", or "green". Use an if statement to print a message based on the current color (e.g., "Stop" for red, "Speed up" for yellow, "Go" for green).
+// 10. Write a code that simulates a traffic light. Declare a variable called currentColor with values "red", "yellow", or "green". Use an if statement to print a message based on the current color (e.g., "Stop" for red, "Speed up" for yellow, "Go" for green).
 
 console.clear();
 let currentColor = "red";
@@ -232,9 +232,9 @@ if (currentColor === "red") {
     console.log("Invalid color");
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-11. Declare a variable called month with the number of the month. Use an if statement to print the month's name.
+// 11. Declare a variable called month with the number of the month. Use an if statement to print the month's name.
 
 console.clear();
 let month = 5; 
@@ -267,9 +267,9 @@ if (month === 1) {
     console.log("Invalid month number");
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-12. Declare a variable and assign a number to it. Print "Divisible by 3" if the variable is divisible by 3. Print "Divisible by 5" if the variable is divisible by 5. Print "Divisible by 3 and 5" if the variable is divisible both by 3 and by 5.
+// 12. Declare a variable and assign a number to it. Print "Divisible by 3" if the variable is divisible by 3. Print "Divisible by 5" if the variable is divisible by 5. Print "Divisible by 3 and 5" if the variable is divisible both by 3 and by 5.
 
 console.clear();
 let number = 9; // Change this value to test different cases
@@ -285,11 +285,11 @@ if (number % 3 === 0 && number % 5 === 0) {
     console.log("Not divisible by 3 or 5");
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-13. Create a variable named radius and assign a number to it. Create a variable named circleArea that stores the area of the circle using the formula area = π * radius^2. Use MDN to find out how to use the PI number in JS.
+// 13. Create a variable named radius and assign a number to it. Create a variable named circleArea that stores the area of the circle using the formula area = π * radius^2. Use MDN to find out how to use the PI number in JS.
 
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/PI
 
 console.clear();
 let radius = 3;
@@ -297,9 +297,9 @@ let circleArea = Math.PI * Math.pow(radius, 2);
 
 console.log("Circle Area:", circleArea.toFixed(2));
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-14. Create a variable studentScore  and assign a number representing a student's score (0-100). Use an if-else statement to determine the grade (A, B, C, D, F) based on the score and print the grade. For instance, a score greater than or equal to 90 could be an 'A', 80-89 could be a 'B', and so on.
+// 14. Create a variable studentScore  and assign a number representing a student's score (0-100). Use an if-else statement to determine the grade (A, B, C, D, F) based on the score and print the grade. For instance, a score greater than or equal to 90 could be an 'A', 80-89 could be a 'B', and so on.
 
 console.clear();
 let studentScore = 55;
@@ -319,9 +319,9 @@ if (studentScore >= 90) {
 
 console.log("Student Grade:", grade);
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-15. Declare a variable representing a car's speed and assign a number to it. Declare another variable representing a speed limit and assign a number to it. Use an if-else statement to print "Speed is fine" if the car's speed is less than or equal to the speed limit, or "Speeding!" if it's over the limit.
+// 15. Declare a variable representing a car's speed and assign a number to it. Declare another variable representing a speed limit and assign a number to it. Use an if-else statement to print "Speed is fine" if the car's speed is less than or equal to the speed limit, or "Speeding!" if it's over the limit.
 
 
 console.clear();
@@ -335,11 +335,11 @@ if (carSpeed <= speedLimit) {
     console.log("Speeding!");
 }
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-16. Delete the else statement and adjust the code to make sure that the output is the same as before.
+// 16. Delete the else statement and adjust the code to make sure that the output is the same as before.
 
-remember that you can give a default value to a variable when declaring it
+// remember that you can give a default value to a variable when declaring it
 
 const age = 21;
 let isAdult;
@@ -352,7 +352,7 @@ if(age >= 18) {
 
 alert(isAdult)
 
---------------
+// --------------
 
 console.clear();
 
@@ -366,21 +366,21 @@ if(age >= 18) {
 alert(isAdult)
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+// %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-17. Extend the code so it prints if the user can drive or not. 
+// 17. Extend the code so it prints if the user can drive or not. 
 
-To determine it, you need to check if the user is an adult and has a driving license. Assign true to the isAdult variable if the user has at least 18 years and false  if the opposite.
+// To determine it, you need to check if the user is an adult and has a driving license. Assign true to the isAdult variable if the user has at least 18 years and false  if the opposite.
 
-Assign true  to canDriveLegally if the user can drive legally or false if not.
+// Assign true  to canDriveLegally if the user can drive legally or false if not.
 
-Make sure to print (alert() or console.log() ) the value of the canDriveLegally variable in human-readable form.
+// Make sure to print (alert() or console.log() ) the value of the canDriveLegally variable in human-readable form.
 
 const age = 21;
 const hasDrivingLicense = true;
 let isAdult, canDriveLegally;
 
--------------------------
+// -------------------------
 
 console.clear();
 const age = 21;
